@@ -79,7 +79,7 @@ Resources:
     Properties:
       InstanceId: !Ref WebServerInstance # Logical name; AWS::EC2::Instance resource
   # Our instance will need a keypair to accessing it
-  NewKeyPair:
+  NewKeyPair: # Logical name
     Type: 'AWS::EC2::KeyPair'
     Properties:
       KeyName: us-west-2.keypair
